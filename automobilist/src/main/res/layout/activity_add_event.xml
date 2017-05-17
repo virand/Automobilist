@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Сроки"
+                android:padding="3dip" />
+            <EditText
+                android:text="20.04.2017"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Показания пробега"
+                android:padding="3dip" />
+            <EditText
+                android:text="каждые ... км"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Место проведения"
+                android:padding="3dip" />
+            <EditText
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Название"
+                android:padding="3dip" />
+            <EditText
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Цена, руб."
+                android:padding="3dip" />
+            <EditText
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Включить напоминание"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_red"
+            android:text="за 1 день"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radio_blue"
+            android:text="за 3 дня"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <RadioButton
+            android:id="@+id/radio_gray"
+            android:text="за неделю"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить событие"
+            android:gravity="center_horizontal"
+        />
+    </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:textColor="#fff"
+            android:layout_margin="1dp"
+            android:background="@drawable/custom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Авто"
+            android:layout_weight="1"
+            />
+
+
+        <Button
+            android:background="#333"
+            android:textColor="#fff"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="События"
+            android:layout_weight="1"
+            />
+        <Button
+            android:textColor="#fff"
+            android:layout_margin="1dp"
+            android:background="@drawable/custom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ПДД"
+            android:layout_weight="1"
+            />
+        <Button
+            android:textColor="#fff"
+            android:layout_margin="1dp"
+            android:background="@drawable/custom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Памятки"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

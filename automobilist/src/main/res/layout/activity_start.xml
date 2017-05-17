@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_download"
+        android:onClick="onClickBtnDownload"/>
+
+    <Button
+        android:id="@+id/btnFirstLaunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_first_launch"
+        android:onClick="onClickBtnFirstLaunch"/>
+
+    <Button
+        android:id="@+id/btnMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_main"
+        android:onClick="onClickBtnMain"/>
+</LinearLayout>

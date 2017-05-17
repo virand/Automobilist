@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="ПДД РФ">
+            </TextView>
+            <ListView
+                android:id="@+id/lvMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:textColor="#fff"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Авто"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                />
+
+            <Button
+                android:textColor="#fff"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="События"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                />
+            <Button
+                android:textColor="#fff"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ПДД"
+                android:layout_weight="1"
+                android:background="#333"
+
+                />
+            <Button
+                android:textColor="#fff"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Памятки"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+

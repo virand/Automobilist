@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <ImageView
+        android:background="#e6e7e8"
+        android:id="@+id/high_stats"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:src="@drawable/month"/>
+
+
+
+    <LinearLayout
+        android:background="#e6e7e8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+       android:layout_marginBottom="4dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Новая запись"
+            android:gravity="center_horizontal"
+
+            />
+
+    </LinearLayout>
+
+            <ImageView
+                android:background="#e6e7e8"
+                android:id="@+id/low_table"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@drawable/table_low"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:background="#333"
+            android:textColor="#fff"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:state_pressed="true"
+            android:text="Авто"
+            android:layout_weight="1"
+            android:onClick="onClickAuto"
+            />
+
+        <Button
+            android:background="@drawable/custom_button"
+            android:textColor="#fff"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="События"
+            android:layout_weight="1"
+            android:onClick="onClickEvents"
+            />
+        <Button
+            android:background="@drawable/custom_button"
+            android:textColor="#fff"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ПДД"
+            android:layout_weight="1"
+            android:onClick="onClickPdd"
+            />
+        <Button
+            android:background="@drawable/custom_button"
+            android:textColor="#fff"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Памятки"
+            android:onClick="onClickNotifications"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

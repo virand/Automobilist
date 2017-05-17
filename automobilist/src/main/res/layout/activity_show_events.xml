@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ Новое событие"
+                android:onClick="onClickAddEvent"/>
+
+            <LinearLayout
+                android:background="#EEE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_margin="2dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/circle_grey"
+                    android:layout_weight="1"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Замена масла"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Каждые 10000 км"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tick"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="4dp"
+                android:layout_margin="2dp"
+                android:background="#EEE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/circle_red"
+                    android:layout_weight="1"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Техосмотр"/>
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+                            <TextView
+                                android:text="Место проведения"
+                                android:padding="3dip" />
+                            <TextView
+                                android:text="Салон №1"
+                                android:padding="3dip" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Сроки"
+                                android:padding="3dip" />
+                            <TextView
+                                android:text="12.05.2017-20.06.2017"
+                                android:padding="3dip" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Цена"
+                                android:padding="3dip" />
+                            <TextView
+                                android:text="20000 рублей"
+                                android:padding="3dip" />
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tick"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="4dp"
+                android:layout_margin="2dp"
+                android:background="#EEE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/circle_yellow"
+                    android:layout_weight="1"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Страховка"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20.05.2017"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tick"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:textColor="#fff"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Авто"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                />
+
+            <Button
+                android:textColor="#fff"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="События"
+                android:layout_weight="1"
+                android:background="#333"
+                />
+            <Button
+                android:textColor="#fff"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ПДД"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                />
+            <Button
+                android:textColor="#fff"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Памятки"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
